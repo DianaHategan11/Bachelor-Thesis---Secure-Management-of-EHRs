@@ -14,6 +14,10 @@ The application is built on a local Ethereum blockchain network and integrates I
 
 This project demonstrates how blockchain and distributed storage can be used to enhance the confidentiality, integrity, and interoperability of healthcare records.
 
+# Running the Application Locally
+
+Perform the following steps to build, configure, and run the application in your local environment:
+
 1. Install all the required dependencies.
 
 ```bash
