@@ -1,6 +1,18 @@
-# blockchain-api
+# Secure Management of Electronic Patient Health Records Using Blockchain
 
-# Launch the blockchain-api
+This project implements a secure backend system for managing electronic patient health records (EHRs) through blockchain technology. It enables healthcare practitioners and patients to store, access, and share medical data in a decentralized and verifiable way.
+
+The application is built on a local Ethereum blockchain network and integrates IPFS (InterPlanetary File System) for distributed, tamper-resistant file storage. Smart contracts handle data access control, identity management, and record verification, ensuring that only authorized entities can view or modify medical information.
+
+# To run and test the API locally, several development tools and a particular dataset are required:
+
+1. **Hardhat** — to deploy and interact with smart contracts on a local Ethereum node.
+
+2. **IPFS Kubo** — to run a local IPFS daemon for secure and distributed file storage.
+
+3. **Synthea Dataset** — to provide synthetic patient and practitioner data for populating and testing the system.
+
+This project demonstrates how blockchain and distributed storage can be used to enhance the confidentiality, integrity, and interoperability of healthcare records.
 
 1. Install all the required dependencies.
 
@@ -46,7 +58,7 @@ Install the csv version from https://synthetichealth.github.io/synthea/ and incl
 npx hardhat run scripts/populate-users.js
 ```
 
-7. Install IPFS Kubo in order to run your local IPFS node as a secure, distributed solution to storing the medical records. Install it from: https://dist.ipfs.tech/#go-ipfs
+7. Install IPFS Kubo in order to run your local IPFS node. Install it from: https://dist.ipfs.tech/#go-ipfs
 
 Initialize the daemon:
 
