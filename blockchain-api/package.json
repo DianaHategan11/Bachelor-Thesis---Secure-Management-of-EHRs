@@ -1,0 +1,15 @@
+{
+  "name": "blockchain-api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:api": "cd server && nodemon ./bin/www",
+    "dev:client": "cd client && npm start",
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:client\""
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.10"
+  }
+}

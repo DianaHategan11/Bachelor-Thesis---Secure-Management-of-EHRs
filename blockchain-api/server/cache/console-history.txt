@@ -1,0 +1,78 @@
+console.log("Original MedicalRecord ➜", getContractAddress({ from: admin, nonce: 0 }));const original = getContractAddress({ from: admin, nonce: 0 });
+const { getContractAddress } = require("ethers");
+const admin = new ethers.Wallet(process.env.ADMIN_PRIVATE_KEY).address.toLowerCase();
+await ethers.provider.send("net_version", [])
+ await ethers.provider.getChainId()
+await ethers.provider.getBlockNumber()
+await ethers.provider.getNetwork()
+})();
+  }
+    }
+      }
+        );
+          `Block ${n}  |  from ${tx.from}  ➜  ${rcpt.contractAddress}`
+        console.log(
+        const rcpt = await ethers.provider.getTransactionReceipt(tx.hash);
+      if (tx.to === null) {                     // contract creation
+    for (const tx of block.transactions) {
+    ce);
+    // v6: pass true to get full tx objects
+  for (let n = 0; n <= latest; n++) {
+ckNumber();
+(async ()   const latest = await ethers.provider.getBlo
+const { ethers } = require("hardhat");
+}
+  }
+    }
+      console.log(`Block ${n} ➜ ${receipt.contractAddress}`);
+      const receipt = await ethers.provider.getTransactionReceipt(tx.hash);
+      // we need the receipt to know the created address
+    if (tx.to === null && tx.from.toLowerCase() === admin) {
+  for (const tx of block.transactions) {
+  const block = await ethers.provider.getBlock(n, true);
+  // v6: pass true to include full tx objects
+for (let n = 0; n <= latest; n++) {
+}
+  }
+    }
+      console.log(`Block ${n}  ➜  ${tx.creates}`);
+      // tx.creates is populated when 'to' is null
+    if (tx.from.toLowerCase() === admin && tx.to === null) {
+  for (const tx of block.transactions) {
+  const block = await ethers.provider.getBlockWithTransactions(n);
+for (let n = 0; n <= latest; n++) {
+const latest = await ethers.provider.getBlockNumber();
+const admin = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266".toLowerCase();
+const { ethers } = require("hardhat");
+const latest = await ethers.provider.getBlockNumber();
+const latest = await ethers.provider.getBlockNumber
+const admin = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266".toLowerCase();
+const { ethers } = require("hardhat");
+// Paste into the Hardhat console with top-level awaitconst { ethers } = require("hardhat");const admin = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266".toLowerCase();const latest = await ethers.provide+) {  const block = await ethers.provider.getBlockWithTransactions(n);  for (const tx of block.transactions) {    if (tx.from.toLowerCase() === admin && tx.to === null) {      // tx.creates is populated when 'to' is null      console.log(`Block ${n}  ➜  ${tx.creates}`);    }  }}
+await ethers.provider.getBlockNumber()
+const { ethers } = require("hardhat");// your deployer addressconst admin = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266".toLowerCase();// pull every tx the admin has ever sentconst history   = await ethers.provider.getHistory(admin);// filter down to contract-creation txs (to === null)const createTxs = history.filter(tx => tx.to === null);for (const tx of createTxs) {  const receipt = await ethers.provider.getTransactionReceipt(tx.hash);  console.log(`Block ${receipt.blockNumber} ➜ ${receipt.contractAddress}`);}
+const history = await ethers.provider.getHistory(admin);
+const txs = await ethers.provider.send("eth_getBlockByNumber", [  "0x0",            // from block 0  false]);
+const abi       = require("./artifacts/contracts/MedicalRecord.sol/MedicalRecord.json").abi;
+const { ethers } = require("hardhat");
+}
+  console.log(`Block ${receipt.blockNumber}  ➜  ${receipt.contractAddress}`);
+for (const   const receipt = await ethers.provider.getTransactionReceipt(tx.hash);
+const createTxs = history.filter(tx => tx.to === null);
+const history = await ethers.provider.getHistory(admin);
+]);
+  "0x0",            // f  false
+const txs = await ethers.provider.send("eth_getBlockByNumber", [
+const abi       = require("./artifacts/contracts/MedicalRecord.sol/MedicalRecord.json").abi;
+const admin".toLowerCase();
+const { ethers } = require("hardhat");
+ethers.formatEther(bal)
+const bal = await ethers.provider.getBalance(admin.address)
+const [admin] = await ethers.getSigners()
+const { ethers } = require("hardhat")
+console.log(`Admin has ${ethers.formatEther(balanceWei)} ETH`);
+const balanceWei = await ethers.provider.getBalance(admin.address);
+const admin = new ethers.Wallet(process.env.ADMIN_PRIVATE_KEY, ethers.provider);
+const { ethers } = require("hardhat");
+console.log(`${admin.address} has ${ethers.utils.formatEther(bal)} ETH`);
+const admin = new ethers.Wallet(process.env.ADMIN_PRIVATE_KEY, ethers.provider);
